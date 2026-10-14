@@ -36,11 +36,11 @@ Create a simple text-based Hangman game where the player guesses a word one lett
 python hangman.py
 ```
 ---
-📈 Task 2: Stock Portfolio Tracker
-📌 Goal
+## 📈 Task 2: Stock Portfolio Tracker
+### 📌 Goal
 Build a simple stock tracker that calculates total investment value based on manually defined stock prices.
 
-✨ Scope & Features
+### ✨ Scope & Features
 Hardcoded dictionary defining stock prices (e.g., {"AAPL": 180, "TSLA": 250, "GOOGL": 140, "AMZN": 175, "MSFT": 420}).
 
 Interactive prompt where the user inputs stock ticker names and quantities.
@@ -49,43 +49,43 @@ Calculates and displays a formatted table of individual holdings and total inves
 
 Optional export of the portfolio summary to a .csv or .txt file.
 
-🚀 How to Run
+### 🚀 How to Run
 
 ```Bash
 python portfolio_tracker.py
 
 ```
 ---
-⚙️ Task 3: Task Automation with Python Scripts
-📌 Goal
+## ⚙️ Task 3: Task Automation with Python Scripts
+### 📌 Goal
 Automate small, real-life repetitive tasks using Python modules.
 
-✨ Implemented Automation Workflows (Choose/Include)
+### ✨ Implemented Automation Workflows (Choose/Include)
 JPG File Mover (os, shutil): Scans a source directory and moves all .jpg image files into a newly created destination folder.
 
 Email Address Extractor (re, file handling): Reads a .txt file, extracts all valid email addresses using Regular Expressions, and saves them into a separate output file.
 
 Webpage Title Scraper (requests, re, file handling): Sends an HTTP request to a fixed webpage URL, scrapes the <title> tag, and saves it locally.
 
-🚀 How to Run
+### 🚀 How to Run
 
 ```Bash
 python task_automation.py
 
 ```
 ---
-🤖 Task 4: Basic Chatbot
-📌 Goal
+## 🤖 Task 4: Basic Chatbot
+### 📌 Goal
 Build a simple rule-based console chatbot capable of holding a basic conversation.
 
-✨ Scope & Features
+### ✨ Scope & Features
 Processes user inputs such as "hello", "how are you", "what is your name", and "bye".
 
 Responds with predefined replies ("Hi!", "I'm fine, thanks!", "Goodbye!").
 
 Structured with modular functions, a continuous while conversation loop, and normalized string matching (if-elif-else).
 
-🚀 How to Run
+### 🚀 How to Run
 
 ```Bash
 python chatbot.py
