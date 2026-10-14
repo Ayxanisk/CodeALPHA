@@ -31,9 +31,10 @@ Create a simple text-based Hangman game where the player guesses a word one lett
 - Pure console input/output with input validation.
 
 ### 🚀 How to Run
+
 ```bash
 python hangman.py
-
+```
 📈 Task 2: Stock Portfolio Tracker
 📌 Goal
 Build a simple stock tracker that calculates total investment value based on manually defined stock prices.
@@ -48,8 +49,11 @@ Calculates and displays a formatted table of individual holdings and total inves
 Optional export of the portfolio summary to a .csv or .txt file.
 
 🚀 How to Run
-Bash
+
+```Bash
 python portfolio_tracker.py
+
+```
 ⚙️ Task 3: Task Automation with Python Scripts
 📌 Goal
 Automate small, real-life repetitive tasks using Python modules.
@@ -62,8 +66,12 @@ Email Address Extractor (re, file handling): Reads a .txt file, extracts all val
 Webpage Title Scraper (requests, re, file handling): Sends an HTTP request to a fixed webpage URL, scrapes the <title> tag, and saves it locally.
 
 🚀 How to Run
-Bash
+
+```Bash
 python task_automation.py
+
+```
+
 🤖 Task 4: Basic Chatbot
 📌 Goal
 Build a simple rule-based console chatbot capable of holding a basic conversation.
@@ -76,6 +84,8 @@ Responds with predefined replies ("Hi!", "I'm fine, thanks!", "Goodbye!").
 Structured with modular functions, a continuous while conversation loop, and normalized string matching (if-elif-else).
 
 🚀 How to Run
-Bash
+
+```Bash
 python chatbot.py
 
+```
