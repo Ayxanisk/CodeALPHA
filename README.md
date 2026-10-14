@@ -1,54 +1,34 @@
-"""
-CodeAlpha - Python Programming Internship
-Task 4: Basic Chatbot
+# 🐍 CodeAlpha Python Programming Internship Tasks
 
-A simple rule-based chatbot that responds to predefined user inputs.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![CodeAlpha](https://img.shields.io/badge/Internship-CodeAlpha-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-Key Concepts Used: if-elif, functions, loops, input/output.
-"""
+This repository contains the completed tasks for the **CodeAlpha Python Programming Internship**. Each project demonstrates fundamental Python concepts including data structures, file handling, regular expressions, and task automation.
 
-import random
+---
 
-RESPONSES = {
-    "hello": ["Hi!", "Hello there!", "Hey! How can I help you today?"],
-    "hi": ["Hi!", "Hello there!"],
-    "how are you": ["I'm fine, thanks! How about you?", "Doing great, thanks for asking!"],
-    "what is your name": ["I'm a simple chatbot built with Python!", "You can call me PyBot."],
-    "what can you do": ["I can chat about basic things! Try saying hello, asking how I am, or saying bye."],
-    "thank you": ["You're welcome!", "No problem!"],
-    "thanks": ["You're welcome!", "Anytime!"],
-    "bye": ["Goodbye!", "Bye! Have a great day!", "See you later!"],
-}
+## 📂 Projects Overview
 
-EXIT_WORDS = {"bye", "exit", "quit"}
+| Task # | Project Name | Key Concepts | File |
+| :--- | :--- | :--- | :--- |
+| **Task 1** | [Hangman Game](#-task-1-hangman-game) | `random`, `while loop`, `sets`, `strings`, `lists` | `hangman.py` |
+| **Task 2** | [Stock Portfolio Tracker](#-task-2-stock-portfolio-tracker) | `dictionaries`, `input validation`, `csv file I/O` | `portfolio_tracker.py` |
+| **Task 3** | [Task Automation Script](#-task-3-task-automation-with-python) | `os`, `shutil`, `re`, `requests`, `file handling` | `task_automation.py` |
 
+---
 
-def get_response(user_input):
-    text = user_input.lower().strip().strip("!?.")
+## 🎮 Task 1: Hangman Game
 
-    for keyword, replies in RESPONSES.items():
-        if keyword in text:
-            return random.choice(replies)
+### 📌 Goal
+A text-based console Hangman game where the player guesses a hidden word one letter at a time within a limited number of attempts.
 
-    return "Sorry, I didn't understand that. Could you rephrase?"
+### ✨ Features
+- Predefined pool of words selected randomly using the `random` module.
+- Maximum of **6 incorrect guesses** allowed.
+- Real-time tracking of guessed letters using a Python `set` to prevent duplicate entries.
+- Input validation ensuring only single alphabetical characters are accepted.
 
-
-def chat():
-    print("=== Simple Chatbot ===")
-    print("Type 'bye', 'exit', or 'quit' to end the conversation.\n")
-
-    while True:
-        user_input = input("You: ").strip()
-
-        if not user_input:
-            continue
-
-        response = get_response(user_input)
-        print(f"Bot: {response}")
-
-        if user_input.lower().strip("!?.") in EXIT_WORDS:
-            break
-
-
-if __name__ == "__main__":
-    chat()
+### 🚀 How to Run
+```bash
+python hangman.py
