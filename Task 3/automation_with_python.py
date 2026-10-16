@@ -23,7 +23,7 @@ def move_jpg_files():
 
     os.makedirs(dst_dir, exist_ok=True)
     moved_files = []
-
+    
     for item in os.listdir(src_dir):
         if item.lower().endswith(".jpg"):
             src_path = os.path.join(src_dir, item)
